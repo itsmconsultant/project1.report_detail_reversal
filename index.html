@@ -160,8 +160,8 @@
                 .schema('project1')
                 .from('detail_reversal') 
                 .select('*')
-                .gte('transaction_time', start)
-                .lte('transaction_time', end)
+                .gte('tanggal_proses', start)
+                .lte('tanggal_proses', end)
                 .order('transaction_time', { ascending: true });
 
             if (error) throw error;
@@ -217,4 +217,5 @@
 
 </body>
 </html>
+
 
